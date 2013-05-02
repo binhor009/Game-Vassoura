@@ -503,17 +503,17 @@ class Fase4(GameState):
                 
                 if self.base[1].rect.x < self.vas.vas.rect.x+216:
                     self.base[1].rect.x = self.vas.vas.rect.x + 9*(self.vas.vas.image.get_width()/53)
-                    self.ficha.eixosLeft,self.ficha.eixosRight = self.balance.setLeft()
+                    #self.ficha.eixosLeft,self.ficha.eixosRight = self.balance.setLeft()
                     pass
                 
                 if self.base[1].rect.x >= self.vas.vas.rect.x+216 and self.base[1].rect.x <= self.vas.vas.rect.x+578:
                     self.base[1].rect.x = self.vas.vas.rect.x + self.vas.vas.image.get_width()/2-self.base[1].image.get_width()/2
-                    self.ficha.eixosLeft,self.ficha.eixosRight = self.balance.setCenter()
+                    #self.ficha.eixosLeft,self.ficha.eixosRight = self.balance.setCenter()
                     pass
                 
                 if self.base[1].rect.x >self.vas.vas.rect.x+ 578:
                     self.base[1].rect.x = self.vas.vas.rect.x + 43*(self.vas.vas.image.get_width()/53)
-                    self.ficha.eixosLeft,self.ficha.eixosRight = self.balance.setRight()
+                    #self.ficha.eixosLeft,self.ficha.eixosRight = self.balance.setRight()
                     pass
                 
                 self.base[1].rect.y = self.vas.vas.image.get_height()/2+self.vas.vas.rect.y-self.base[1].image.get_height()/2                
